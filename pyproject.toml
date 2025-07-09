@@ -1,0 +1,23 @@
+[project]
+name = "robot-ai"
+version = "0.1.0"
+description = "AI for making tea with a SO-100 robot arm"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "pydub==0.25.1",
+    "simpleaudio==1.0.4",
+    "google-genai==1.23.0"
+#     "lerobot==0.1.0" # Install locally
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit (>=4.1.0,<5.0.0)",
+    "ruff (>=0.12.2,<0.13.0)",
+    "bandit (>=1.8.2,<2.0.0)"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
