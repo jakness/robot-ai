@@ -8,7 +8,7 @@ dependencies = [
     "pydub==0.25.1",
     "simpleaudio==1.0.4",
     "google-genai==1.23.0"
-#     "lerobot==0.1.0" # Install locally
+#     "lerobot==0.1.0" # Install locally (commit 459c95197ba1114ac8c3f538786ede005598f5e9)
 ]
 
 [project.optional-dependencies]
