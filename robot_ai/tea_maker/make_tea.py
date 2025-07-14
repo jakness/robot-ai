@@ -15,7 +15,7 @@ from robot_ai.lerobot_utils.record import (
     HOME_POSITION,
     RECORDED_VIDEO_PATH,
 )
-from robot_ai.instructions import get_task_instruction, TASK_MAKE_TEA
+from robot_ai.tea_maker.instructions import get_task_instruction, TASK_MAKE_TEA
 from robot_ai.tasks import (
     Tool,
     get_task_plan,
