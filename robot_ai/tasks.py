@@ -92,6 +92,6 @@ def ask_for_help(ai_client: genai.Client):
     data = response.candidates[0].content.parts[0].inline_data.data
 
     audio_file_name = SCRIPT_DIR_PATH / "ask_for_help.wav"
-    wave_file(audio_file_name, data)
+    wave_file(str(audio_file_name), data)
     song = AudioSegment.from_file(audio_file_name, format="wav")
     play(song)
