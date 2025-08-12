@@ -175,3 +175,13 @@ or the position of the sugar cubes, etc.
       predicted actions can be used.
     * n_action_steps: 8
       * At every inference step run 8 actions.
+
+### Example execution
+* https://youtube.com/shorts/xu5SK6N3HO8
+  * Dropping the teabag into the teacup and removing it were performed successfully. When trying to drop the sugar cube in
+  the teacup, we can notice that at first the robot failed to grab a sugar cube, but then it went back to grab a new
+  sugar cube and was able to grab one and drop it in the teacup successfully. This is an example of what was
+  talked about in the data collection section. Stirring failed at first because the robot failed to grab the spoon but
+  there is the component for checking whether the skill usage was successful or not, and in this case it noticed that
+  the skill usage wasn't successful, which resulted in the robot trying to perform the skill again. Stirring the spoon
+  the second time was done successfully.
